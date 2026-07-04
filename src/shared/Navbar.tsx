@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const NAV = [
   { id: "exmedia", label: "ExMedia", href: "/" },
   { id: "extechnology", label: "ExTechnology", href: "/extechnology" },
-  { id: "exedu", label: "ExEdu", href: "/exedu" },
   { id: "exbot", label: "ExBot", href: "/exbot" },
+  { id: "exedu", label: "ExEdu", href: "/exedu" },
   { id: "company", label: "Company", href: "/company" },
   { id: "contact", label: "Contact", href: "/contact" },
 ] as const;
