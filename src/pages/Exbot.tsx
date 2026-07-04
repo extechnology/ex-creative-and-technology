@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowUpRight, MessageSquare, Send, Check, Users, Sparkles, Smartphone, Shield, Activity, RefreshCw } from "lucide-react";
+import { ArrowUpRight, MessageSquare,  Check, Users, Sparkles, Smartphone, RefreshCw } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 
 interface ChatMessage {
@@ -99,14 +99,17 @@ const Exbot = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-auto mb-auto pt-6">
           
           {/* Headline and Lead */}
-          <div data-reveal className="lg:col-span-7 flex flex-col justify-center space-y-8">
-            <div className="flex flex-wrap gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
+          <div data-reveal className="lg:col-span-7 flex flex-col justify-center space-y-6">
+            {/* <div className="flex flex-wrap gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
               <span className="border border-white/10 px-2 py-0.5 bg-white/5">[ BOT_ENGINE: ENGAGED ]</span>
               <span className="border border-white/10 px-2 py-0.5 bg-white/5">[ DISPATCH: SECURE ]</span>
-            </div>
+            </div> */}
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               <h1 className="text-balance font-display text-4xl sm:text-6xl lg:text-7xl font-normal leading-[0.95] tracking-tight uppercase">
+                exbot
+              </h1>
+              <h1 className=" font-display text-xl sm:text-xl lg:text-2xl font-normal leading-[0.95] tracking-tight uppercase">
                 Automate Every Interaction & <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-accent via-white to-white/30">
                   Seamless Customer Communication
@@ -114,7 +117,7 @@ const Exbot = () => {
               </h1>
             </div>
 
-            <p className="max-w-xl text-lg sm:text-xl leading-relaxed text-muted-foreground">
+            <p className="max-w-xl text-xs sm:text-lg leading-6 text-muted-foreground">
               Streamline every customer interaction with smart WhatsApp automation that saves time and drives business growth. Never miss a customer opportunity.
             </p>
 

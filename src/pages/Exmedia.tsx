@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Camera, Sparkles, Palette, Layers, Compass, Check, Aperture, Eye, MessageSquare, Play, BarChart2 } from "lucide-react";
+import { ArrowUpRight, Sparkles, Palette, Layers, Compass, Check, Aperture } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 
 interface ServicePreset {
@@ -96,14 +96,17 @@ const Exmedia = () => {
           
           {/* Main Title & Lede */}
           <div data-reveal className="lg:col-span-8 flex flex-col justify-center space-y-8">
-            <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-muted-foreground">
+            {/* <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-muted-foreground">
               <span className="h-px w-8 bg-muted-foreground" />
               exmedia — creative studio
-            </div>
+            </div> */}
 
             <div className="space-y-4">
-              <h1 className="text-balance font-display text-5xl sm:text-7xl lg:text-8xl font-normal leading-[0.9] tracking-tight uppercase">
-                Artistic Direction. <br />
+              <h1 className="text-balance font-display text-4xl sm:text-6xl lg:text-7xl font-normal leading-[0.9] tracking-tight uppercase">
+                exmedia
+              </h1>
+              <h1 className=" font-display text-xl sm:text-xl lg:text-2xl font-normal leading-[0.95] tracking-tight uppercase">
+                Artistic Direction.{" "}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-accent via-white to-white/30">
                   Flawless Brand.
                 </span>
