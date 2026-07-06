@@ -1,0 +1,13 @@
+name: Creative Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Starting Creative Workflow!"
